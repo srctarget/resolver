@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of the resolver cookbook.
 
+## 2.1.1 (2018-10-07)
+
+- Return from default recipe if platform is Windows
+
 ## 2.1.0 (2018-07-18)
 
 - Test with Local Delivery instead of Rake

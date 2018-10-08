@@ -19,6 +19,8 @@
 # = Requires
 # * node[:resolver][:nameservers]
 
+return if node['platform_family'] == 'windows' # Do not run on Windows
+
 def docker_guest?
   node['virtualization'] && node['virtualization']['systems'] &&
     node['virtualization']['systems']['docker'] && node['virtualization']['systems']['docker'] == 'guest'
